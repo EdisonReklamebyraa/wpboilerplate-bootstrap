@@ -1,6 +1,6 @@
 # wpboilerplate
-Dette er en boilerplate for å komme raskt igang med WordPress theme utvikling.
-Den benytter seg av SCSS, moderne JS (ES6), twig-syntaks for PHP, og et eksempel på hvordan implementere ACF i gutenberg. 
+Dette er en boilerplate for å komme raskt igang med WordPress theme utvikling.\
+Den benytter seg av SCSS, moderne JS (ES6), twig-syntaks for PHP, og et eksempel på hvordan implementere ACF i gutenberg.\
 
 - Opprett domene på domeneshop
 
@@ -16,21 +16,21 @@ Lokalt:
 
 Klikk "use this template" i dette repoet. Du opprett da et nytt repo med navnet på din theme.
 
-Tilbake i terminalen lokalt, kjør 
-$ git remote add github [url til repoet du laget]
+Tilbake i terminalen lokalt, kjør\
+$ git remote add github [url til repoet du laget]\
 $ git pull github master
 
-Sett opp git på Plesk. Når det er gjort legger du til denne også som remote:
+Sett opp git på Plesk. Når det er gjort legger du til denne også som remote:\
 $ git remote add plesk [url til repo]
 
-For å unngå å skrive credentials hver gang man pusher til plesk (usikret metode)
-$ git config credential.helper store
-Gjør en test-push:
+For å unngå å skrive credentials hver gang man pusher til plesk (usikret metode)\
+$ git config credential.helper store\
+Gjør en test-push:\
 $ git push plesk master
 
 Husk å legge inn ACF og Timber som plugins i WordPress
 
-til slutt må du kjøre
+til slutt må du kjøre\
 $ npm i
 
 GL HF!
