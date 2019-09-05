@@ -16,11 +16,11 @@ Det følger også med et eksempel på hvordan man implementerer ACF som en Guten
 
 
 ## How-to
-- Opprett domene på domeneshop
+- Opprett domene (domeneshop)
 
-Plesk: 
-  - Opprette domene på Plesk - Notér ned credentials
-  - Installer WordPress på domenet (plesk) - notere ned databasenavn, prefix, bruker og pw.
+Staging: 
+  - Opprette site på din hosting-tjeneste (plesk) - Notér ned credentials
+  - Installer WordPress hos din host (plesk) - notere ned databasenavn, prefix, bruker og pw.
 
 Lokalt:
   - Sett opp en lokal WP installasjon (XAMPP, Laragon, whatever)
