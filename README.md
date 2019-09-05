@@ -10,7 +10,7 @@ Det følger også med et eksempel på hvordan man implementerer ACF som en Guten
 
 */views* Her ligger alle twig-view'ene, altså markupen til hver sidetype. De har php-filer med korresponderende navn i rotmappa.
 
-*/views/block* Her legger du alt av ACF/Gutenberg-blocker. Følg navnkonvensjonen block-[navn-på-block].twig.\
+*/views/block* Her legger du view'ene til ACF/Gutenberg-blocker. Følg navnkonvensjonen block-[navn-på-block].twig.\
 */inc/acf-blocks* Her definerer du nye gutenberg-blocker. Bare dupliser acf_register_block(), og bytt ut verdiene med egne.\
 */inc/block-controllers* Her ligger de korresponderende php-filene til view-filene. Benytt samme navnkonvensjon.
 
