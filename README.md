@@ -52,6 +52,3 @@ Deretter kan du kjøre\
 ```$ gulp watch```
 
 GL HF!
-
-
-Todo: Rense opp functions, css og js
