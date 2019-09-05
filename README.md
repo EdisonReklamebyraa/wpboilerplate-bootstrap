@@ -1,6 +1,7 @@
 # wpboilerplate
 Dette er en boilerplate for å komme raskt igang med WordPress theme utvikling.\
-Den benytter seg av SCSS, moderne JS (ES6), twig-syntaks for PHP, og et eksempel på hvordan implementere ACF i gutenberg.
+Den benytter seg av SCSS, moderne JS (ES6), twig-syntaks for PHP. \
+Det følger også med et eksempel på hvordan man implementerer ACF som en Gutenberg-block
 
 - Opprett domene på domeneshop
 
