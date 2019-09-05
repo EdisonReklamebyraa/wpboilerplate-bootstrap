@@ -18,20 +18,20 @@ Lokalt:
 Klikk "use this template" i dette repoet. Du opprett da et nytt repo med navnet på din theme.
 
 Tilbake i terminalen lokalt, kjør\
-$ git remote add github [url til repoet du laget]\
-$ git pull github master
+```$ git remote add github [url til repoet du laget]```\
+```$ git pull github master```
 
 Sett opp git på Plesk. Når det er gjort legger du til denne også som remote:\
-$ git remote add plesk [url til repo]
+```$ git remote add plesk [url til repo]```
 
 For å unngå å skrive credentials hver gang man pusher til plesk (usikret metode)\
-$ git config credential.helper store\
+```$ git config credential.helper store```\
 Gjør en test-push:\
-$ git push plesk master
+```$ git push plesk master```
 
 Husk å legge inn ACF og Timber som plugins i WordPress
 
 til slutt må du kjøre\
-$ npm i
+```$ npm i```
 
 GL HF!
