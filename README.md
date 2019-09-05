@@ -54,4 +54,4 @@ Deretter kan du kjøre\
 GL HF!
 
 
-Todo: Rense opp functions
+Todo: Rense opp functions, css og js
