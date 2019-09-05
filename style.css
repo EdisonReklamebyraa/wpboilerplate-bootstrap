@@ -1,36 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,700&display=swap');
 /*
  * Theme Name: wp-boilerplate
  * Author: Joachim // R8 Edge
  */
-/* SASS and global'ish stuff */
-body {
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 700;
-}
-/* BEM-blocks */
-.hamburger:hover {
-  cursor: pointer;
-}
-.burger-line {
-  display: block;
-  height: 3px;
-  width: 30px;
-  margin-bottom: 5px;
-}
-.burger-line:last-of-type() {
-  margin-bottom: 0;
-}
-.main-navigation li {
-  display: inline;
-  text-transform: uppercase;
-}
