@@ -1,2 +1,2 @@
 exports.themeLocation = './';
-exports.urlToPreview = 'http://tekniskrb.test/';
+exports.urlToPreview = 'http://dinurl.test';
