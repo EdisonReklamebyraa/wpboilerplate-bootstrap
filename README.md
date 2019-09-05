@@ -31,11 +31,10 @@ Gjør en test-push:\
 
 Husk å legge inn ACF og Timber som plugins i WordPress
 
-til slutt må du kjøre\
+Nå kan vi installere node pakkene som kreves:\
 ```$ npm i```
 
-Andre gotchas:
-For å kunne kjøre gulp, gå til settings.js, og legg inn din lokale url i urlToPreview
+For å kunne kjøre gulp, gå til settings.js, og legg inn din lokale url i urlToPreview.\
 Deretter kan du kjøre\
 ```$ gulp watch```
 
