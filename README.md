@@ -3,6 +3,19 @@ Dette er en boilerplate for å komme raskt igang med utvikling av WordPress them
 Den benytter seg av SCSS, moderne JS (ES6), twig-syntaks for PHP og gulp for hot reload av browser. \
 Det følger også med et eksempel på hvordan man implementerer ACF som en Gutenberg-block
 
+## Organisering:
+*/assets/css* Her ligger en style.css som importerer alle css-filene. Bare legg til flere importer ved behov. I disse filene kan du skrive SCSS som blir kompilert til vanlig css i style.css som ligger i rotmappa, som er fila som blir lest av WordPress.
+
+*/assets/js* Her ligger scripts.js hvor det importeres js-filer og instansieres objekter. Dette blir kompilert med babel til scripts-bundled.js
+
+*/views* Her ligger alle twig-view'ene, altså markupen til hver sidetype. De har php-filer med korresponderende navn i rotmappa.
+
+*/views/block* Her legger du alt av ACF/Gutenberg-blocker. Følg navnkonvensjonen block-[navn-på-block].twig.\
+*/inc/acf-blocks* Her definerer du nye gutenberg-blocker. Bare dupliser acf_register_block(), og bytt ut verdiene med egne.\
+*/inc/block-controllers* Her ligger de korresponderende php-filene til view-filene. Benytt samme navnkonvensjon.
+
+
+## How-to:
 - Opprett domene på domeneshop
 
 Plesk: 
@@ -39,3 +52,6 @@ Deretter kan du kjøre\
 ```$ gulp watch```
 
 GL HF!
+
+
+Todo: Rense opp functions
