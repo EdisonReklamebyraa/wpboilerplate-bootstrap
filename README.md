@@ -34,4 +34,9 @@ Husk å legge inn ACF og Timber som plugins i WordPress
 til slutt må du kjøre\
 ```$ npm i```
 
+Andre gotchas:
+For å kunne kjøre gulp, gå til settings.js, og legg inn din lokale url i urlToPreview
+Deretter kan du kjøre\
+```$ gulp watch```
+
 GL HF!
