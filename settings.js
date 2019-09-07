@@ -1,2 +1,2 @@
 exports.themeLocation = './';
-exports.urlToPreview = 'http://dinurl.test';
+exports.urlToPreview = 'http://wpboilerplate.test';

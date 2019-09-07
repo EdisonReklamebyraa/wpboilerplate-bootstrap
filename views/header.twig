@@ -4,30 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Teknisk Renhold og Byggdrift</title>
+  <title>Boilerplate</title>
   {{ head }}
 </head>
 <body>
 
-<div class="container my-2">
-  <div class="row justify-content-between">
-    <div class="col-2">
-    LogoLogoLogo
-    </div>
-    <div class="col-2 col-md-10 text-right">
-      <div id="hamburger" class="hamburger d-block d-md-none align-self-right">
-        <span class="burger-line"></span>
-        <span class="burger-line"></span>
-        <span class="burger-line"></span>
-      </div>
-      <p class="text-uppercase">Ring oss: 33 44 31 31</p>
+  <div class="c-main-header">
 
-      <nav class="d-none d-md-flex main-navigation justify-content-md-end">
-        {{ nav }}
-      </nav>
+    <div class="c-main-header__logo">
+      Boilerplate Logo
     </div>
+
+    <nav class="c-main-header__nav">
+      <figure id="hamburger" class="c-main-header__hamburger">
+        <span class="c-main-header__burger-line"></span>
+        <span class="c-main-header__burger-line"></span>
+        <span class="c-main-header__burger-line"></span>
+      </figure>
+
+      {{ nav }}
+
+    </nav>
+
   </div>
 
-</div>
 
 
