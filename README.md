@@ -18,7 +18,7 @@ Det følger også med et eksempel på hvordan man implementerer ACF som en Guten
 ### Flexible-content
 Som regel bruker vi flexible content som en veldig fleksibel page builder. Definer derfor først et ACF-felt av typen Flexible Content, og gi denne field name "main". Deretter lager du alle modulene dine som rows i denne.
 
-*/views/acf* er i utgangspunktet den eneste mappen du trenger å forholde deg til. Her legger du view'ene til acf-block'er som benytter et Flexible Content-field. Bruk navnekonvensjonen acf-[navn-på-modul].twig. Du kan da få tak i feltene ved å bruke fields.[navn-på-field].
+*/views/acf* er i utgangspunktet den eneste mappen du trenger å forholde deg til. Her legger du view'ene til acf-block'er som benytter et Flexible Content-field. Bruk navnekonvensjonen acf-[navn-på-modul].twig. Du kan da få tak i feltene ved å bruke fields.[navn-på-field]. I denne mappen ligger acf-main.php, som kaller de forskjellige view'ene. Dupliser if-setningen i denne fila hvis du skal legge til nye moduler.
 
 
 
