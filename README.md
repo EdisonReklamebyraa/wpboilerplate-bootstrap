@@ -10,9 +10,16 @@ Det følger også med et eksempel på hvordan man implementerer ACF som en Guten
 
 */views* Her ligger alle twig-view'ene, altså markupen til hver sidetype. De har php-filer med korresponderende navn i rotmappa.
 
+###Gutenberg:/
 */views/block* Her legger du view'ene til ACF/Gutenberg-blocker. Følg navnkonvensjonen block-[navn-på-block].twig.\
 */inc/acf-blocks* Her definerer du nye gutenberg-blocker. Bare dupliser acf_register_block(), og bytt ut verdiene med egne.\
 */inc/block-controllers* Her ligger de korresponderende php-filene til view-filene. Benytt samme navnkonvensjon.
+
+###Flexible-content:/
+Som regel bruker vi flexible content som en veldig fleksibel page builder. Definer derfor først et ACF-felt av typen Flexible Content, og gi denne field name "main". Deretter lager du alle modulene dine som rows i denne.
+
+*/views/acf* er i utgangspunktet den eneste mappen du trenger å forholde deg til. Her legger du view'ene til acf-block'er som benytter et Flexible Content-field. Bruk navnekonvensjonen acf-[navn-på-modul].twig. Du kan da få tak i feltene ved å bruke fields.[navn-på-field].
+
 
 
 ## How-to
