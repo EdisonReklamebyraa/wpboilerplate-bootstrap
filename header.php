@@ -1,6 +1,5 @@
 <?php
 $context = array();
-$context['head'] = wp_head();
 $context['nav'] = wp_nav_menu(array(
   'menu' => 'headerMenuLocation',
   'echo' => false,
