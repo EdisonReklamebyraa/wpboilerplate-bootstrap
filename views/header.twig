@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,21 +9,13 @@
 </head>
 <body>
 
-  <div class="c-main-header">
-
-    <div class="c-main-header__logo">
-      Boilerplate Logo
+  <div class="container">
+    <div class="row d-flex">
+      <div class="col">
+        Boilerplate Logo
+      </div>
+      <nav class="col">
+        {{ nav }}
+      </nav>
     </div>
-
-    <nav class="c-main-header__nav">
-      <figure id="hamburger" class="c-main-header__hamburger">
-        <span class="c-main-header__burger-line"></span>
-        <span class="c-main-header__burger-line"></span>
-        <span class="c-main-header__burger-line"></span>
-      </figure>
-
-      {{ nav }}
-
-    </nav>
-
   </div>

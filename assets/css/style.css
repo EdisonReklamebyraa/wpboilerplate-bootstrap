@@ -1,7 +1,11 @@
 /*
- * Theme Name: wp-boilerplate
- * Author: Joachim // R8 Edge
+ * Theme Name: wp-boilerplate-bootstrap
+ * Author: Joachim & Espen // R8 Edge
  */
+
+/* Bootstrap GRID */
+@import "../../node_modules/bootstrap/dist/css/bootstrap-reboot.css";
+@import "../../node_modules/bootstrap/dist/css/bootstrap-grid.css";
 
 /* SASS and global'ish stuff */
 @import "base/variables.css";
