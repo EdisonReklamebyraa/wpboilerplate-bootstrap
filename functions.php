@@ -1,9 +1,27 @@
 <?php
 /* CSS og JS */
+function enqueue_files($path) {
+  return new DirectoryIterator(get_stylesheet_directory() . $path);
+}
+
 function add_my_scripts() {
-  wp_enqueue_style('main-styles', get_template_directory_uri() . '/style.css', null, '1.0.0', false);
-  wp_enqueue_script('main-scripts', get_template_directory_uri() . '/assets/js/scripts-bundled.js', array(), '1.0.0', true);
-} add_action('wp_enqueue_scripts', 'add_my_scripts');
+  $cssDir = enqueue_files('/dist/css');
+  foreach ($cssDir as $cssfile) {
+    if (pathinfo($cssfile, PATHINFO_EXTENSION) === 'css') {
+      $fullName = basename($cssfile);    // main.3hZ9.js
+      $name = substr(basename($fullName), 0, strpos(basename($fullName), '.')); //
+      // echo $name;
+      wp_enqueue_style(
+        $fullName,
+        get_template_directory_uri() . '/dist/css/' . $fullName,
+        null,
+        null,
+        false
+      );
+      // wp_enqueue_style('main-styles', $name , null,  false, false);
+    }
+
+  }
 
  /* Remove all actions related to Emojis */
  function disable_wp_emojicons() {
