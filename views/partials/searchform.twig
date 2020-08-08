@@ -1,4 +1,6 @@
-<form class="search" action="/" method="get">
-  <input type="text" name="s" id="search" value="{{ fn('get_search_query') }}">
-  <input type="image" alt="Search" src="{{ magnifier }}" width="20">
+<form class="search__form" action="/" method="get">
+  <input class="search__input" type="text" name="s" id="search" autocomplete="off" value="{{ fn('get_search_query') }}">
+  <button type="submit" class="search__button">
+    <img id="searchImage" class="search__icon" src="{{ magnifier }}" width="20" alt="Search">
+  </button>
 </form>
