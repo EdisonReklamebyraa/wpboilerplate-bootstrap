@@ -1,8 +1,9 @@
 <header class="topHeader">
-  <div>
+  <section class="logo">
     <a href="{{ site.link }}" aria-label="forside"><img src="{{ site_logo }}" width="100"></a>
-  </div>
-  <div>
+  </section>
+
+  <nav class="navigation">
     {% include 'partials/nav.twig' %}
 
     <button class="hamburger" id="hamburger">
@@ -12,7 +13,5 @@
       <span class="visually-hidden">Menu</span>
     </button>
 
-  </div>
-
-
+  </nav>
 </header>
