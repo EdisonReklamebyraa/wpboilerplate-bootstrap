@@ -1,7 +1,18 @@
-.visually-hidden {
-  display: none;
+/* Use this class for screen reader text */
+.screenReader {
+  border: 0;
+  clip-path: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
-.overflow-hidden {
-  overflow-y: hidden;
+/* Push bottom to footer */
+html {
+  height: 100%;
+  position: relative;
+  padding-bottom: 56px // Height of footer
 }

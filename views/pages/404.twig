@@ -1,0 +1,12 @@
+{% extends 'layouts/base.twig' %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-lg-8">
+      <h1>404 - That's an error</h1>
+      <p>"{{ slug|slice(1) }}" doesn't exist..</p>
+    </div>
+  </div>
+</div>
+{% endblock %}
